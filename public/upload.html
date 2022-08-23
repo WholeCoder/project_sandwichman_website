@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        
+        <title>Upload File</title>
+       </head>
+       <body>
+       <h1>Compress/Decompress a file to 60% of it's size.</h1>
+       <br />
+       <h3>Please choose a file and click the button onthe side to perform the comression or decompression.</h3>
+       <form
+            enctype="multipart/form-data"
+            action="http://localhost:8080/upload"
+            method="post">
+           <br />
+           <input type="file" name="myFile" />
+           <input type="submit" value="Compress" name="compress"/>
+       </form>
+       <form
+            enctype="multipart/form-data"
+            action="http://localhost:8080/decompress"
+            method="post">
+           <br />
+           <input type="file" name="myFile" />
+           <input type="submit" value="Decompress" name="decompress"/>
+       </form>
+       </body>
+</html>
